@@ -5,6 +5,8 @@ import com.myboard.board.dto.BoardDeleteDto;
 import com.myboard.board.dto.BoardDto;
 import com.myboard.board.service.BoardService;
 import lombok.RequiredArgsConstructor;
+import org.aspectj.lang.annotation.Around;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
