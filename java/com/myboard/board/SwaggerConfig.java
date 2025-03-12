@@ -23,7 +23,7 @@ public class SwaggerConfig {  //Swagger에 연동하기 위해 필요한 config 
     public OpenAPI springShopOpenAPI() {
         return new OpenAPI()
                 .info(new Info().title("BEER_PROJECT API")  //제목
-                        .description("맥주 커뮤니티 프로젝트 API 명세서입니다.")  //설명
+                        .description("API 명세서입니다.")  //설명
                         .version("v0.0.1"));
     }
 }
