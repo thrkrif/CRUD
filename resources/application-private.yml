@@ -1,4 +1,8 @@
 spring:
+#  실무에서는 프로젝트를 복사하지 않고 "프로파일 분리 방식"을 이용한다.
+#  profiles:
+#    active: dev
+
   datasource:
 #    url: jdbc:mysql://localhost:3306/board_crud?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
     # 위의 url은 로컬에서 사용 시, 밑의 url은 도커에서 사용, mysql-crud-container는 mysql 컨테이너의 이름
