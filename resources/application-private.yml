@@ -5,8 +5,8 @@ spring:
 
   datasource:
 #    url: jdbc:mysql://localhost:3306/board_crud?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
-    # 위의 url은 로컬에서 사용 시, 밑의 url은 도커에서 사용, mysql-crud-container는 mysql 컨테이너의 이름
-    url: jdbc:mysql://mysql-crud-container:3306/board_crud?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    # 위의 url은 로컬에서 사용 시, 밑의 url은 도커에서 사용, mysql-crud-container2는 mysql 컨테이너의 이름
+    url: jdbc:mysql://mysql-crud-container2:3306/board_crud?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: ""
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -15,7 +15,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
     properties:
       hibernate:
         show_sql: false

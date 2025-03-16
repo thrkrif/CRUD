@@ -50,9 +50,11 @@ public class BoardApiController {
                     boardDto.getContent()
             );
             boardService.create(board);
+            body.put("message", "Board created successfully");  // 성공 메시지 추가
         } catch (Exception exception){
             status = HttpStatus.BAD_REQUEST; // 400 에러
             System.out.println("create_board/exception = " + exception);
+            body.put("error", exception.getMessage());  // 오류 메시지 추가
         }
         return new ResponseEntity(body, headers, status);
     }

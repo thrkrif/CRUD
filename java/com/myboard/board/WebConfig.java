@@ -10,7 +10,8 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                .allowedOrigins("http://localhost:3000", "http://react-frontend-container") // React 앱 주소
+                .allowedOrigins("*") // 모든 출처 허용 (개발 시에만)
+//                .allowedOrigins("http://localhost:3000", "http://react-frontend-container2") // React 앱 주소
                 .allowedMethods("GET", "POST", "PUT", "DELETE");
     }
 }
